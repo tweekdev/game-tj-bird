@@ -1,0 +1,253 @@
+@import keyframe
+    
+body
+    width: 100vw
+    height: 100vw
+    margin: 0
+    padding: 0
+    overflow: hidden
+    cursor: url('img/layers/target.png') 4 12,auto
+
+    main
+        width: 100%
+        height: 100%
+        position: relative
+        cursor: url('img/layers/target.png') 4 12, auto
+
+        #carre
+            overflow: hidden
+
+            .background1
+                width: 100%
+                height: 100%
+                background: url('img/layers/sky.png') center no-repeat
+                background-size: cover
+                overflow: hidden
+                position: absolute
+
+            .background2
+                width: 100%
+                height: 100%
+                background: url('img/layers/clouds_1.png') top no-repeat
+                background-size: contain
+                position: absolute
+                overflow: hidden
+                animation: nuage 20s linear infinite
+            .background3
+                width: 50%
+                height: 50%
+                background: url('img/layers/clouds_2.png') center no-repeat
+                background-size: contain
+                position: absolute
+                overflow: hidden
+                animation: nuages2 20s linear infinite
+            .background4
+                width: 50%
+                height: 50%
+                background: url('img/layers/clouds_3.png') bottom no-repeat
+                background-size: contain
+                position: absolute
+                overflow: hidden
+                animation: nuages2 12s linear infinite
+            .background5
+                width: 100%
+                height: 100%
+                background: url('img/layers/pines.png') top no-repeat
+                background-size: cover
+                position: absolute
+                overflow: hidden
+            .background5
+                width: 100%
+                height: 100%
+                background: url('img/layers/rocks_1.png') top no-repeat
+                position: absolute
+                overflow: hidden
+            .background7
+                width: 100%
+                height: 100%
+                background: url('img/layers/rocks_2png') top no-repeat
+                background-size: cover
+                position: absolute
+                overflow: hidden
+            .background8
+                width: 100%
+                height: 100%
+                background: url('img/layers/rocks_3.png')top no-repeat
+                background-size: cover
+                position: absolute
+                overflow: hidden
+            .background9
+                width: 100%
+                height: 100%
+                background: url('img/layers/birds.png')top no-repeat
+                position: absolute
+                overflow: hidden
+
+
+
+
+
+
+
+#enemy
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: flex-start
+    .bird1
+        height: 75px
+        width: 100px
+        background: url('img/oiseaux/bird/1.png')
+        position: relative
+        top: 5px
+        animation: oiseaux1 15s linear infinite
+    .bird2
+        height: 75px
+        width: 100px
+        background: url('img/oiseaux/bird/1.png')
+        position: relative
+        animation: oiseaux1 10s linear infinite
+    .bird3
+        height: 75px
+        width: 100px
+        background: url('img/oiseaux/bird/1.png')
+        position: relative
+        animation: oiseaux1 9s linear infinite
+
+#enemy2
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: flex-end
+    .bird4
+        height: 75px
+        width: 100px
+        background: url('img/oiseaux/bird/8.png')
+        position: relative
+        display: block
+        animation: oiseaux2 12s linear infinite
+
+    .bird5
+        height: 75px
+        width: 100px
+        background: url('img/oiseaux/bird/8.png')
+        position: relative
+        display: block
+        animation: oiseaux2 9s linear infinite
+    .bird6
+        height: 75px
+        width: 100px
+        background: url('img/oiseaux/bird/8.png')
+        position: relative
+        display: block
+        animation: oiseaux2 15s linear infinite
+#enemy3
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: flex-start
+    .bird7
+        height: 75px
+        width: 100px
+        background: url('img/oiseaux/bird/1.png')
+        position: relative
+        animation: oiseaux1 20s linear infinite
+
+    .bird8
+        height: 75px
+        width: 100px
+        background: url('img/oiseaux/bird/1.png')
+        position: relative
+        animation: oiseaux1 9s linear infinite
+    .bird9
+        height: 75px
+        width: 100px
+        background: url('img/oiseaux/bird/1.png')
+        position: relative
+        top: 80px
+        animation: oiseaux1 15s linear infinite
+
+img
+    position: absolute
+
+#popup
+    width: 290px
+    height: 200px
+    position: absolute
+    top: 35%
+    left: 40%
+    text-align: center
+    line-height: 25px
+    background: url('img/layers/back.jpg')
+    background-size: contain
+    button
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin-top: 20px
+        background: linear-gradient(rgb(119, 72, 21),rgb(119, 72, 21))
+        border: none
+#alert
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    text-align: center
+
+#restart
+    display: flex
+    flex-direction: column-reverse
+
+footer
+    width: 100%
+    height: 80px
+    display: flex
+    flex-direction: row
+    position: absolute
+    bottom: 0
+    text-align: center
+    line-height: 80px
+    .points
+        width: 98px
+        height: 70px
+        position: absolute
+        left: 5%
+        border: 3px #643e1e solid
+        background: url('img/layers/back.jpg')
+        background-size: contain
+        background-position: center
+
+
+
+    .munition
+
+        position: absolute
+        left: 80%
+        width: 98px
+        height: 70px
+        border: 3px #643e1e solid
+        background: url('img/layers/back.jpg')
+        background-size: contain
+        background-position: center
+    .decompteur
+        position: absolute
+        left: 90%
+        width: 98px
+        height: 70px
+        border: 3px #643e1e solid
+        background: url('img/layers/back.jpg')
+        background-size: contain
+        background-position: center
+    
+
+a
+    color: white
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    text-decoration: none
+    font-size: 1.9em
+span
+    padding-top: 30px
+    font-style: italic
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    

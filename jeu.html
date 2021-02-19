@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jeu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header></header>
+    <main>
+      <div id="carre">
+        <div class="background1"></div>
+        <div class="background2"></div>
+        <div class="background3"></div>
+        <div class="background4"></div>
+        <div class="background5"></div>
+        <div class="background6"></div>
+        <div class="background7"></div>
+        <div class="background8"></div>
+        <div class="background9"></div>
+      </div>
+      <div id="enemy">
+        <div class="bird1">
+          <img src="img/oiseaux/bird/1.png" alt="bird" />
+          <img src="img/oiseaux/bird/2.png" alt="bird" />
+          <img src="img/oiseaux/bird/3.png" alt="bird" />
+          <img src="img/oiseaux/bird/4.png" alt="bird" />
+        </div>
+        <div class="bird2">
+          <img src="img/oiseaux/bird/1.png" alt="bird" />
+          <img src="img/oiseaux/bird/2.png" alt="bird" />
+          <img src="img/oiseaux/bird/3.png" alt="bird" />
+          <img src="img/oiseaux/bird/4.png" alt="bird" />
+        </div>
+        <div class="bird3">
+          <img src="img/oiseaux/bird/1.png" alt="bird" />
+          <img src="img/oiseaux/bird/2.png" alt="bird" />
+          <img src="img/oiseaux/bird/3.png" alt="bird" />
+          <img src="img/oiseaux/bird/4.png" alt="bird" />
+        </div>
+      </div>
+      <div id="enemy2">
+        <div class="bird4">
+          <img src="img/oiseaux/bird/5.png" alt="bird" />
+          <img src="img/oiseaux/bird/6.png" alt="bird" />
+          <img src="img/oiseaux/bird/7.png" alt="bird" />
+          <img src="img/oiseaux/bird/8.png" alt="bird" />
+        </div>
+        <div class="bird5">
+          <img src="img/oiseaux/bird/5.png" alt="bird" />
+          <img src="img/oiseaux/bird/6.png" alt="bird" />
+          <img src="img/oiseaux/bird/7.png" alt="bird" />
+          <img src="img/oiseaux/bird/8.png" alt="bird" />
+        </div>
+        <div class="bird6">
+          <img src="img/oiseaux/bird/5.png" alt="bird" />
+          <img src="img/oiseaux/bird/6.png" alt="bird" />
+          <img src="img/oiseaux/bird/7.png" alt="bird" />
+          <img src="img/oiseaux/bird/8.png" alt="bird" />
+        </div>
+      </div>
+      <div id="enemy3">
+        <div class="bird7">
+          <img src="img/oiseaux/bird/1.png" alt="bird" />
+          <img src="img/oiseaux/bird/2.png" alt="bird" />
+          <img src="img/oiseaux/bird/3.png" alt="bird" />
+          <img src="img/oiseaux/bird/4.png" alt="bird" />
+        </div>
+        <div class="bird8">
+          <img src="img/oiseaux/bird/1.png" alt="bird" />
+          <img src="img/oiseaux/bird/2.png" alt="bird" />
+          <img src="img/oiseaux/bird/3.png" alt="bird" />
+          <img src="img/oiseaux/bird/4.png" alt="bird" />
+        </div>
+        <div class="bird9">
+          <img src="img/oiseaux/bird/1.png" alt="bird" />
+          <img src="img/oiseaux/bird/2.png" alt="bird" />
+          <img src="img/oiseaux/bird/3.png" alt="bird" />
+          <img src="img/oiseaux/bird/4.png" alt="bird" />
+        </div>
+      </div>
+    </main>
+    <section id="popupReplay">
+      <div id="alert" class="alert">
+        <span id="message"></span>
+        <div id="restart">
+          <button id="arreter"><a href="over.html">STOP</a></button>
+          <button id="rejouer"><a href="jeu.html">ENCORE</a></button>
+        </div>
+      </div>
+    </section>
+
+    <footer id="resultat">
+      <div class="points"><span>points</span></div>
+      <div class="munition">munitions</div>
+      <div class="decompteur">temps</div>
+    </footer>
+
+    <script src="vendors/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
